@@ -5,30 +5,20 @@
   box-sizing: border-box;
 }
 
-/* Background */
-.background {
-  background: #2F4F4F;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-/* Container */
 .container {
-  background: white;
-  display: inline-block;
-  margin: 25px 0px;
-
+  padding: 10px;
 }
-
 /* Image */
 .container .city {
-  width: 30vw;
-  height: 50vh;
+  height: 100vh;
   background-size: cover;
   position: relative;
-  margin: 10px;
   box-shadow: 1px 1px #808080;
+  margin-bottom: 10px;
+}
+
+.container .city:last-child {
+  margin-bottom: 0px;
 }
 
 .container .city.roma {
@@ -48,6 +38,10 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  /* aggiungere position absolute al filtro */
+  /* position: absolute;
+  top: 0;
+  left: 0; */
 }
 
 /* City name */
@@ -61,6 +55,7 @@
   text-shadow: 1px 1px #808080;
 }
 
+/* togliere questo effetto su visione a tutta pagina */
 .city:hover .filter {
   background-color: rgba(0, 0, 0, 0);
 }
